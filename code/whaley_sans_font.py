@@ -4,7 +4,7 @@
 # from https://github.com/makecode-extensions/WhaleySansFont/blob/master/WhaleySansFont.ts
 # adapta a python by @javacasm
 
-from microbit import display, Image
+from microbit import display, Image, sleep
 
 v = '0.2'
 
