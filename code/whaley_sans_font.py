@@ -6,7 +6,7 @@
 
 from microbit import display, Image
 
-v = '0.1'
+v = '0.2'
 
 print('WhaleySansFont v'+v)
 
@@ -22,6 +22,11 @@ FONT = [
         [1, 1, 1, 1, 0, 0, 1, 1, 1, 1],
         [1, 1, 1, 1, 1, 1, 0, 1, 1, 1]
     ]
+
+def test_font(pause=100):
+    for i in range(100): # between 0 and 99
+        show_number(i)
+        sleep(pause)
 
 def show_number(number,bright = 9,leading_cero=True):
     display.clear()
